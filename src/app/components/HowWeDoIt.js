@@ -88,7 +88,7 @@ export default function HowWeDoIt() {
   </motion.h4>
 
   <motion.h5
-    className="mb-2 text-[28px] leading-[2rem]"
+    className="mb-2 text-[28px] leading-[2rem] text-white"
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
@@ -100,7 +100,7 @@ export default function HowWeDoIt() {
   </motion.h5>
 
   <motion.h5
-    className="mb-2 text-[28px] leading-[2rem]"
+    className="mb-2 text-[28px] leading-[2rem] text-white"
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
@@ -111,7 +111,7 @@ export default function HowWeDoIt() {
   </motion.h5>
 
   <motion.h5
-    className="mb-2 text-[28px] leading-[2rem]"
+    className="mb-2 text-[28px] leading-[2rem] text-white"
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
