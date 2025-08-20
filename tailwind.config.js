@@ -11,6 +11,11 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      // <-- YEH HISSA ADD KAREIN -->
+      fontFamily: {
+        'tt-commons': ['"TT Commons Pro"', 'sans-serif'],
+      },
+      // <-- YAHAN TAK -->
     },
   },
   plugins: [],
