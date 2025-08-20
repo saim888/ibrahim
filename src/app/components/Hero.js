@@ -75,7 +75,7 @@ export default function Hero() {
             <img
                 src="/img/4.png"
                 alt="Bottom Right Corner"
-                className="absolute bottom-0 right-0 w-28 sm:w-40 lg:w-[16rem] h-auto z-20"
+                className="absolute bottom-0 right-[-55px] w-28 sm:w-40 lg:w-[16rem] h-auto z-20"
             />
             <img
                 src="/img/bottom-right.png"
