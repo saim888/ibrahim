@@ -44,3 +44,24 @@ html {
 }
 
 
+@media (min-width: 640px) {
+  .sm\:w-40 {
+    width: 10rem; /* 160px */
+  }
+}
+
+.w-32 {
+  width: 8rem; /* 128px */
+}
+
+.h-auto {
+  height: auto;
+}
+
+.right-5 {
+  right: 3.25rem; /* ~52px (updated from 4.25rem) */
+}
+
+.bottom-20 {
+  bottom: 10rem; /* 160px */
+}
