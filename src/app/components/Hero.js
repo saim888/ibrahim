@@ -4,40 +4,51 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
-        <section
-            // --- MAIN CONTAINER ---
-            className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center text-white overflow-hidden"
-            style={{ backgroundColor: "#05233c" }}
-        >
-            <img
-                src="/img/1.png"
-                alt="Decoration"
-                className="absolute top-[-6vh] left-[-17vw] w-[40vw] max-w-[470px] hidden lg:block"
-            />
+        <section className="hero">
+            <img src="/img/1.png" alt="Decoration" className="img1" />
+            <img src="/img/2.png" alt="Decoration" className="img2" />
+            <img src="/img/center.png" alt="Decoration" className="imgCenter" />
+            <img src="/img/bottom-right.png" alt="Bottom Right" className="imgBottomRight" />
+            <img src="/img/4.png" alt="Bottom Right Corner" className="img4" />
+            <img src="/img/5.png" alt="5" className="img5" />
 
             <motion.img
                 src="/img/logo.png"
                 alt="Logo"
-                className="absolute top-4 left-4 w-32 lg:top-[2.3rem] lg:left-[6rem] lg:w-[30rem] z-30"
+                className="logo"
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1 }}
             />
 
-            <img
-                src="/img/2.png"
-                alt="Decoration"
-                className="absolute top-[-27vh] right-0 w-[34vw] max-w-[410px] hidden lg:block"
-            />
+            <div className="leftColumn">
+                <motion.img
+                    src="/img/main.png"
+                    alt="Hero"
+                    className="mainImage"
+                    initial={{ x: -100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 1.5, ease: "easeOut" }}
+                />
+            </div>
 
-            <img
-                src="/img/center.png"
-                alt="Decorations"
-                className="absolute top-[-51vh] left-[49%] -translate-x-1/2 w-[50vw] max-w-[500px] hidden lg:block"
-            />
-
-
+            <motion.div
+                className="rightColumn"
+                initial={{ x: 50, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
+            >
+                <div className="textContainer">
+                    <div className="textBlock">
+                        <h1 className="textSmall">SECURE SOLUTIONS FOR</h1>
+                        <h1 className="textLarge">TOMORROW'S</h1>
+                        <h1 className="textLarge">CHALLENGES</h1>
+                    </div>
+                    <div className="itBox">
+                        <h1 className="itText">IT</h1>
+                    </div>
+                </div>
+            </motion.div>
         </section>
-
     );
 }
