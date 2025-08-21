@@ -32,7 +32,7 @@ export default function Hero() {
 
             <img
                 src="/img/center.png"
-                alt="Decoration"
+                alt="Decorations"
                 className="absolute top-[-51vh] left-[49%] -translate-x-1/2 w-[50vw] max-w-[500px] hidden lg:block"
             />
 
