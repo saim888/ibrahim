@@ -44,7 +44,7 @@ export default function Hero() {
             {/* --- RIGHT COLUMN (TEXT CONTENT) --- */}
             <motion.div
                 // Using clamp for padding to scale it with screen size
-                className="w-full lg:w-1/2 flex justify-center lg:justify-start z-10 p-4 lg:px-[clamp(2rem,8vw,6rem)]"
+                className="w-full lg:w-1/2 flex justify-center lg:justify-start z-10 p-4 lg:pl-[clamp(2rem,8vw,6rem)]"
                 initial={{ x: 50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
