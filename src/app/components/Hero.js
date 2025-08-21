@@ -51,7 +51,7 @@ export default function Hero() {
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-start pt-20 lg:pt-0 z-10">
                 <motion.img
                     src="/img/main.png"
-                    alt="Hero"
+                    alt="Heros"
                     className="w-full max-w-[90%] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[700px] h-auto object-contain"
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
