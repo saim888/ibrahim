@@ -70,7 +70,7 @@ export default function Hero() {
             />
 
             {/* ---- LEFT COLUMN (MAIN IMAGE) ---- */}
-            <div className="w-full lg:w-1/2 flex justify-center lg:justify-start pt-20 lg:pt-0 z-10">
+            <div className="w-full lg:w-2/3 flex justify-center lg:justify-start pt-20 lg:pt-0 z-10">
                 <motion.img
                     src="/img/main.png"
                     alt="Heros"
@@ -83,7 +83,7 @@ export default function Hero() {
 
             {/* ---- RIGHT COLUMN (TEXT CONTENT) ---- */}
             <motion.div
-                className="w-full lg:w-1/2 flex justify-center lg:justify-start z-10 p-4 lg:p-24"
+                className="w-full lg:w-1/2 flex justify-center lg:justify-start z-10 p-4 lg:p-16"
                 initial={{ x: 50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
