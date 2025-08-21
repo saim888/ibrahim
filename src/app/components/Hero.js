@@ -39,8 +39,19 @@ export default function Hero() {
             {/*    className="absolute bottom-[-20vh] right-[-25vw] z-0"*/}
             {/*/>*/}
 
-            <motion.div className="absolute w-[27rem] h-[32rem] right-[-260px] bottom-[-199px] z-[9999]" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 3.5, ease: "easeOut", type: "spring", stiffness: 120, damping: 35 }}>
-                <Image src="/img/bottom-right.png" alt="Bottom Right" layout="fill" objectFit="contain" />
+            <motion.div
+                className="absolute w-[27rem] h-[32rem] right-[-260px] bottom-[-199px] z-[9999]"
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 3.5, ease: "easeOut", type: "spring", stiffness: 120, damping: 35 }}
+            >
+                <Image
+                    src="/img/bottom-right.png"
+                    alt="Bottom Right"
+                    fill
+                    style={{ objectFit: "contain" }}
+                />
             </motion.div>
 
 
