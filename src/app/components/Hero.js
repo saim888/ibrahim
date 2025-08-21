@@ -48,7 +48,7 @@ export default function Hero() {
             >
                 <Image
                     src="/img/bottom-right.png"
-                    alt="Bottom Right"
+                    alt="Bottom Rights"
                     fill
                     style={{ objectFit: "contain" }}
                 />
