@@ -91,22 +91,24 @@ export default function Hero() {
                 <div className="flex flex-col items-center lg:flex-row lg:items-stretch gap-4 max-w-[500px] text-center lg:text-right">
                     {/* Text block */}
                     <div>
-                        <h1 className="text-base sm:text-lg md:text-xl font-normal">
+                        <h1 className="text-[31px] font-normal leading-[36px]">
                             SECURE SOLUTIONS FOR
                         </h1>
-                        <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                        <h1 className="text-[37.6px] font-bold leading-[42px]">
                             TOMORROW'S
                         </h1>
-                        <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                        <h1 className="text-[37.6px] font-bold leading-[42px]">
                             CHALLENGES
                         </h1>
                     </div>
+
                     {/* "IT" box */}
                     <div className="flex items-center justify-center bg-[#8a9fc4] px-4 py-1 mt-2 sm:mt-0">
-                        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black">
+                        <h1 className="text-[37.6px] font-bold text-black">
                             IT
                         </h1>
                     </div>
+
                 </div>
             </motion.div>
         </section>
