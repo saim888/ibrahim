@@ -12,11 +12,13 @@ export default function Hero() {
                 <motion.img
                     src="/img/main.png"
                     alt="Hero"
-                    className="  main-image w-3/4 sm:w-2/3 md:w-1/2 lg:w-auto object-contain"
+                    className="main-image object-contain"
+                    style={{ position: "absolute", left: 0, top: "13%", height: "85vh" }} // left 0 added
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
                 />
+
             </div>
 
             {/* RIGHT TEXT */}

@@ -259,3 +259,53 @@ html {
     max-width: 100%;
     height: auto;
 }
+
+/* New media query for screens 1280px and above */
+@media (min-width: 1280px) {
+
+    .main-image {
+        top: 12%;
+        left: 2%;
+        height: 85vh;
+    }
+
+    .img-top-left {
+        width: 28rem;
+        left: -15%;
+        top: -5%;
+    }
+
+    .img-top-right {
+        width: 27rem;
+        top: -29%;
+    }
+
+    .img-center-top {
+        width: 40rem;
+        top: -65%;
+        left: 24%;
+    }
+
+    .img-bottom-right {
+        width: 37rem;
+        right: -31%;
+        bottom: -32%;
+        height: 69%;
+    }
+
+    .img-5 {
+        width: 15rem;
+        height: 20rem;
+        right: 2rem;
+        bottom: 8rem;
+    }
+
+    .logo-main {
+        width: 28rem;
+        height: 6rem;
+        top: 3rem;
+        left: 6rem;
+    }
+}
+
+
