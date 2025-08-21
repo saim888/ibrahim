@@ -39,8 +39,7 @@ export default function WhoWeAre() {
                         <motion.img
                             src="/img/logo.png"
                             alt="CipherCore Logo"
-                            className="absolute" // 👈 important
-                            style={{ top: "4%", width: "18%", height: "22%" }}
+                            className="absolute img-log "
                             animate={{ scale: [1, 1.05, 1] }}
                             transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
                         />
