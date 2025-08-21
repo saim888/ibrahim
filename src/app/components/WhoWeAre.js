@@ -10,7 +10,7 @@ export default function WhoWeAre() {
             style={{ backgroundImage: "url('/img/who.png')" }}
         >
             {/* Decorative Images (No changes) */}
-            <img src="/img/5.png" alt="Top Left" className="absolute z-[9999]" style={{ top: "-272px", left: "237px", width: "40rem", height: "35rem", transform: "scaleX(-1)" }} />
+            <img src="/img/5.png" alt="Top Left" className="absolute z-[9999]" style={{ top: "-17rem", left: "5rem", width: "30rem", height: "35rem", transform: "scaleX(-1)" }} />
             <img src="/img/22.png" alt="Bottom Left" className="absolute z-[9999]" style={{ bottom: "-288px", left: "-148px", width: "30rem", height: "30rem" }} />
 
             <div className="relative z-10 max-w-5xl w-full flex flex-col items-center space-y-12">

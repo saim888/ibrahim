@@ -7,7 +7,7 @@ export function Contact() {
     return (
         <section
             id="contact"
-            className="relative flex justify-center items-start min-h-screen overflow-hidden"
+            className="relative flex justify-center items-start h-[85vh] overflow-hidden"
             style={{backgroundColor: "#05233c"}}
         >
             <div className="container mx-auto p-8 grid md:grid-cols-2 gap-16 z-10">

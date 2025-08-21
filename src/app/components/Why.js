@@ -54,6 +54,7 @@ export default function Why() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true }}
+                    style={{marginTop: "3rem"}}
                 >
                     {features.map((feature, index) => (
                         <div key={index} className="flex items-start gap-4">

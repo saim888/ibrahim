@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function WhatWeDo() {
     return (
         <section
-            className="relative h-[109vh] py-20 px-8"
+            className="relative h-[119vh] py-20 px-8"
             style={{ backgroundColor: "#05233c" }}
         >
             <div
@@ -13,7 +13,7 @@ export default function WhatWeDo() {
                 style={{
                     left: "0%",
                     width: "45%",
-                    height: "70vh",
+                    height: "78vh",
                     backgroundColor: "rgb(26, 69, 98)",
                     zIndex: 1,
                 }}
@@ -48,7 +48,7 @@ export default function WhatWeDo() {
                 src="/img/32.png"
                 alt="Top Right"
                 className="absolute z-[9999]"
-                style={{ top: "50px", right: "0px", width: "16rem", height: "14rem" }}
+                style={{ top: "100px", right: "0px", width: "14rem", height: "13rem" }}
             />
 
 
