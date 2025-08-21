@@ -70,7 +70,7 @@ export default function Hero() {
             />
 
             {/* ---- LEFT COLUMN (MAIN IMAGE) ---- */}
-            <div className="w-full lg:w-2/3 flex justify-center lg:justify-start pt-20 lg:pt-0 z-10">
+            <div className="w-full lg:w-2/3 flex justify-center lg:justify-start pt-20 lg:pt-8 z-10">
                 <motion.img
                     src="/img/main.png"
                     alt="Heros"
