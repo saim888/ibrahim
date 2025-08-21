@@ -31,13 +31,22 @@ export default function Hero() {
                 alt="Decoration"
                 className="absolute top-[-48vh] left-1/2 -translate-x-1/2 w-[45vw] max-w-[500px] xl:w-[500px]"
             />
+            {/*<Image*/}
+            {/*    src="/img/bottom-right.png"*/}
+            {/*    alt="Bottom Rights"*/}
+            {/*    width={500}*/}
+            {/*    height={480}*/}
+            {/*    className="absolute bottom-[-20vh] right-[-25vw] z-0"*/}
+            {/*/>*/}
+
             <Image
                 src="/img/bottom-right.png"
-                alt="Bottom Rights"
+                alt="Bottom Right"
                 width={500}
                 height={480}
-                className="absolute bottom-[-20vh] right-[-25vw] z-0"
+                className="absolute bottom-[-20vh] right-[-25vw] w-[45vw] max-w-[500px] xl:w-[500px] z-0"
             />
+
 
             <img
                 src="/img/4.png"
