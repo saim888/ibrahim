@@ -39,13 +39,12 @@ export default function Hero() {
             {/*    className="absolute bottom-[-20vh] right-[-25vw] z-0"*/}
             {/*/>*/}
 
-            <Image
-                src="/img/bottom-right.png"
-                alt="Bottom Right"
-                width={500}
-                height={480}
-                className="absolute bottom-[-20vh] xl:right-[-25vw] w-[45vw] max-w-[450px] xl:w-[450px] z-0"
-            />
+            <motion.div className="absolute w-[27rem] h-[32rem] right-[-260px] bottom-[-199px] z-[9999]" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 3.5, ease: "easeOut", type: "spring", stiffness: 120, damping: 35 }}>
+                <Image src="/img/bottom-right.png" alt="Bottom Right" layout="fill" objectFit="contain" />
+            </motion.div>
+
+
+
 
 
             <img
@@ -56,7 +55,7 @@ export default function Hero() {
             <img
                 src="/img/5.png"
                 alt="5"
-                className="absolute bottom-[20vh] right-[3vw] w-[18vw] max-w-[200px] xl:w-[200px] z-10"
+                className="absolute bottom-[16vh] right-[3vw] w-[18vw] max-w-[200px] xl:w-[200px] z-10"
             />
 
             {/* ---- LEFT COLUMN (MAIN IMAGE) ---- */}
