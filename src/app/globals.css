@@ -90,8 +90,7 @@ html {
 
 /* Logo */
 .logo-main {
-    top: 1rem; /* ~16px */
-    left: 1rem;
+
 }
 @media (min-width: 768px) {
     .logo-main {
@@ -103,7 +102,7 @@ html {
     .logo-main {
         top: 2.1rem;
         left: 6rem;
-        width: 37rem;
+        width: 35rem;
         height: 8rem;
     }
 }

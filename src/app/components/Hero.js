@@ -55,6 +55,8 @@ export default function Hero() {
                 alt="Logo"
                 className="logo-main absolute w-24 "
                 initial={{ scale: 1 }}
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 3, repeat: 0, ease: "easeInOut" }}
             />
             <img src="/img/1.png" alt="Top Left" className="img-top-left" />
             <img src="/img/2.png" alt="Top Right" className="img-top-right" />
