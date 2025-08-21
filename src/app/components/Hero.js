@@ -49,7 +49,7 @@ export default function Hero() {
 
             <img
                 src="/img/4.png"
-                alt="Bottom Right Corner"
+                alt="Bottom Right corner"
                 className="absolute bottom-0 right-[-5vw] w-[18vw] max-w-[220px] xl:w-[220px] z-20"
             />
             <img
