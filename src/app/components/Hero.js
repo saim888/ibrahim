@@ -1,54 +1,60 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="hero">
-            <img src="/img/1.png" alt="Decoration" className="img1" />
-            <img src="/img/2.png" alt="Decoration" className="img2" />
-            <img src="/img/center.png" alt="Decoration" className="imgCenter" />
-            <img src="/img/bottom-right.png" alt="Bottom Right" className="imgBottomRight" />
-            <img src="/img/4.png" alt="Bottom Right Corner" className="img4" />
-            <img src="/img/5.png" alt="5" className="img5" />
+        <section className="relative w-full min-h-screen bg-[#05233c] text-white flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-20 py-10 overflow-hidden">
 
-            <motion.img
-                src="/img/logo.png"
-                alt="Logo"
-                className="logo"
-                initial={{ scale: 0.9, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 1 }}
-            />
-
-            <div className="leftColumn">
-                <motion.img
-                    src="/img/main.png"
-                    alt="Hero"
-                    className="mainImage"
-                    initial={{ x: -100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, ease: "easeOut" }}
+            {/* Logo */}
+            <div className="absolute top-6 left-6">
+                <Image
+                    src="/img/logo.png" // replace with your logo
+                    alt="Ciphercore Technologies"
+                    width={330}
+                    height={60}
+                    className="object-contain"
                 />
             </div>
 
+            {/* Left Image */}
+            <div className="flex-1 flex justify-center lg:justify-start mt-20 lg:mt-0">
+                <motion.img
+                    src="/img/main.png" // replace with your laptop + lock image
+                    alt="Secure IT"
+                    className="w-72 sm:w-96 lg:w-[500px] rounded-lg shadow-lg"
+                    initial={{ x: -100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+                />
+            </div>
+
+            {/* Right Text */}
             <motion.div
-                className="rightColumn"
-                initial={{ x: 50, opacity: 0 }}
+                className="flex-1 flex flex-col justify-center lg:pl-16 text-center lg:text-left mt-10 lg:mt-0"
+                initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
+                transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
             >
-                <div className="textContainer">
-                    <div className="textBlock">
-                        <h1 className="textSmall">SECURE SOLUTIONS FOR</h1>
-                        <h1 className="textLarge">TOMORROW'S</h1>
-                        <h1 className="textLarge">CHALLENGES</h1>
+                <h2 className="text-sm md:text-base font-light tracking-widest mb-2">
+                    SECURE SOLUTIONS FOR
+                </h2>
+                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
+                    TOMORROW’S
+                </h1>
+                <div className="flex items-center justify-center lg:justify-start space-x-2">
+                    <div className="bg-gray-300 text-[#0C2340] px-3 py-1 rounded-md font-bold text-lg sm:text-xl lg:text-3xl">
+                        IT
                     </div>
-                    <div className="itBox">
-                        <h1 className="itText">IT</h1>
-                    </div>
+                    <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold">CHALLENGES</h1>
                 </div>
             </motion.div>
+
+            {/* Decorative lines / patterns (optional) */}
+            <div className="absolute bottom-6 right-6 opacity-20">
+                <img src="/img/pattern.png" alt="Pattern" className="w-32 sm:w-48 lg:w-64" />
+            </div>
         </section>
     );
 }
