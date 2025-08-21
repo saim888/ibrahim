@@ -44,7 +44,7 @@ export default function Hero() {
                 alt="Bottom Right"
                 width={500}
                 height={480}
-                className="absolute bottom-[-20vh] right-[-25vw] w-[45vw] max-w-[500px] xl:w-[500px] z-0"
+                className="absolute bottom-[-20vh] xl:right-[-25vw] w-[45vw] max-w-[450px] xl:w-[450px] z-0"
             />
 
 
