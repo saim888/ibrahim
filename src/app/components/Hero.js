@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
     return (
         <section
-            className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center text-white overflow-hidden px-4 lg:px-8"
+            className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center text-red overflow-hidden px-4 lg:px-8"
             style={{ backgroundColor: "#05233c" }}
         >
             {/* LEFT IMAGE */}
