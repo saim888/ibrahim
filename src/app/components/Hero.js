@@ -24,7 +24,7 @@ export default function Hero() {
                 <Image
                     src="/img/logo.png"
                     alt="Ciphercore Technologies"
-                    width={430}
+                    width={431}
                     height={60}
                     className="object-contain"
                 />
