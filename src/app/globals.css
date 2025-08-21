@@ -253,3 +253,9 @@ html {
 
     }
 }
+
+.absolute-img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}

@@ -12,7 +12,7 @@ export default function Hero() {
                 <motion.img
                     src="/img/main.png"
                     alt="Hero"
-                    className="main-image w-3/4 sm:w-2/3 md:w-1/2 lg:w-auto object-contain"
+                    className="  main-image w-3/4 sm:w-2/3 md:w-1/2 lg:w-auto object-contain"
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
@@ -53,25 +53,25 @@ export default function Hero() {
             <motion.img
                 src="/img/logo.png"
                 alt="Logo"
-                className="logo-main absolute w-24 "
+                className="logo-main absolute-img w-24 "
                 initial={{ scale: 1 }}
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 3, repeat: 0, ease: "easeInOut" }}
             />
-            <img src="/img/1.png" alt="Top Left" className="img-top-left" />
-            <img src="/img/2.png" alt="Top Right" className="img-top-right" />
-            <img src="/img/center.png" alt="Center Top" className="img-center-top" />
+            <img src="/img/1.png" alt="Top Left" className="img-top-left absolute-img" />
+            <img src="/img/2.png" alt="Top Right" className="img-top-right absolute-img" />
+            <img src="/img/center.png" alt="Center Top" className="img-center-top absolute-img" />
             <img
                 src="/img/4.png"
                 alt="Bottom Right Corner"
-                className="img-bottom-right-corner"
+                className="img-bottom-right-corner absolute-img"
             />
             <img
                 src="/img/bottom-right.png"
                 alt="Bottom Right"
-                className="img-bottom-right"
+                className="img-bottom-right absolute-img"
             />
-            <img src="/img/5.png" alt="5" className="img-5" />
+            <img src="/img/5.png" alt="5" className="img-5 absolute-img" />
         </section>
     );
 }
