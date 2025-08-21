@@ -33,7 +33,7 @@ export default function Hero() {
             />
             <Image
                 src="/img/bottom-right.png"
-                alt="Bottom Right"
+                alt="Bottom Rights"
                 width={500}
                 height={480}
                 className="absolute bottom-[-20vh] right-[-25vw] z-0"
