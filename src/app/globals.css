@@ -248,3 +248,37 @@ html {
 /*    }*/
 /*    }*/
 /*}*/
+
+.hero-main-img {
+    width: auto;
+    height: 75vh;
+    max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .hero-main-img {
+        height: 75vh;
+        width: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .hero-main-img {
+        height: auto;
+        max-height: 50vh;
+    }
+
+    img[alt="Decoration"] {
+        max-width: 40vw;
+        height: auto;
+    }
+}
+@media (min-width: 1200px) {
+    .top-6 {
+        top: 4vh !important;
+    }
+
+    .left-6 {
+        left: 10vh !important;
+    }
+}
