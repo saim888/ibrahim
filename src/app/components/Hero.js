@@ -8,21 +8,31 @@ export default function Hero() {
             className="relative min-h-screen flex items-center justify-center text-white overflow-hidden"
             style={{ backgroundColor: "#05233c" }}
         >
+            {/* ---- LOGO ---- */}
+            <motion.img
+                src="/img/logo.png"
+                alt="Logo"
+                className="absolute top-4 left-4 w-32 lg:top-[2.3rem] lg:left-[6rem] lg:w-[30rem] z-30"
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1 }}
+            />
+
             {/* ---- BACKGROUND DECORATION IMAGES ---- */}
             <img
                 src="/img/1.png"
                 alt="Decoration"
-                className="absolute top-[-6vh] left-[-10vw] w-[35vw] max-w-[470px] xl:w-[470px]"
+                className="absolute top-[-5vh] left-[-16vw] w-[35vw] max-w-[470px] xl:w-[470px]"
             />
             <img
                 src="/img/2.png"
                 alt="Decoration"
-                className="absolute top-[-20vh] right-[-8vw] w-[35vw] max-w-[410px] xl:w-[410px]"
+                className="absolute top-[-25vh] right-[1vw] w-[35vw] max-w-[410px] xl:w-[410px]"
             />
             <img
                 src="/img/center.png"
                 alt="Decoration"
-                className="absolute top-[-40vh] left-1/2 -translate-x-1/2 w-[45vw] max-w-[500px] xl:w-[500px]"
+                className="absolute top-[-48vh] left-1/2 -translate-x-1/2 w-[45vw] max-w-[500px] xl:w-[500px]"
             />
             <img
                 src="/img/bottom-right.png"
