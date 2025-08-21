@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
     return (
@@ -19,11 +20,7 @@ export default function Hero() {
             />
 
             {/* ---- BACKGROUND DECORATION IMAGES ---- */}
-            <img
-                src="/img/1.png"
-                alt="Decoration"
-                className="absolute top-[-5vh] left-[-16vw] w-[35vw] max-w-[470px] xl:w-[470px]"
-            />
+            <Image src="/img/1.png" alt="Center Left" width={450} height={480} className="absolute left-[-197px] top-[20%] transform -translate-y-1/2 " />
             <img
                 src="/img/2.png"
                 alt="Decoration"
