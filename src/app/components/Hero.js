@@ -1,116 +1,89 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
+
+// Ab yahan CSS import ki zaroorat nahi hai, kyunki styling globals.css se aayegi
 
 export default function Hero() {
     return (
-        <section
-            className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-between text-white overflow-hidden"
-            style={{ backgroundColor: "#05233c" }}
-        >
+        <section className="hero-section">
             {/* ---- LOGO ---- */}
-            <motion.img
+            <img
                 src="/img/logo.png"
                 alt="Logo"
-                className="absolute top-4 left-4 w-32 lg:top-[2.3rem] lg:left-[6rem] lg:w-[30rem] z-30"
-                initial={{ scale: 0.9, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 1 }}
+                className="hero-logo"
             />
 
             {/* ---- BACKGROUND DECORATION IMAGES ---- */}
-            <Image src="/img/1.png" alt="Center Left" width={450} height={480} className="absolute left-[-197px] top-[20%] transform -translate-y-1/2 " />
+            <Image
+                src="/img/1.png"
+                alt="Center Left Decoration"
+                width={450}
+                height={480}
+                className="hero-bg-image-1"
+            />
             <img
                 src="/img/2.png"
-                alt="Decoration"
-                className="absolute top-[-25vh] right-[1vw] w-[35vw] max-w-[410px] xl:w-[410px]"
+                alt="Top Right Decoration"
+                className="hero-bg-image-2"
             />
             <img
                 src="/img/center.png"
-                alt="Decoration"
-                className="absolute top-[-48vh] left-1/2 -translate-x-1/2 w-[45vw] max-w-[500px] xl:w-[500px]"
+                alt="Top Center Decoration"
+                className="hero-bg-image-center"
             />
-            {/*<Image*/}
-            {/*    src="/img/bottom-right.png"*/}
-            {/*    alt="Bottom Rights"*/}
-            {/*    width={500}*/}
-            {/*    height={480}*/}
-            {/*    className="absolute bottom-[-20vh] right-[-25vw] z-0"*/}
-            {/*/>*/}
 
-            <motion.div
-                className="absolute w-[27rem] h-[32rem] right-[-260px] bottom-[-199px] z-[9999]"
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.1 }}
-                transition={{ duration: 3.5, ease: "easeOut", type: "spring", stiffness: 120, damping: 35 }}
-            >
+            <div className="hero-bottom-right-container">
                 <Image
                     src="/img/bottom-right.png"
-                    alt="Bottom Rights"
+                    alt="Bottom Right Decoration"
                     fill
                     style={{ objectFit: "contain" }}
                 />
-            </motion.div>
-
-
-
-
+            </div>
 
             <img
                 src="/img/4.png"
-                alt="Bottom Right cornerss"
-                className="absolute bottom-0 right-[-5vw] w-[18vw] max-w-[220px] xl:w-[220px] z-20"
+                alt="Bottom Corner Decoration"
+                className="hero-bg-image-4"
             />
             <img
                 src="/img/5.png"
-                alt="5"
-                className="absolute bottom-[16vh] right-[3vw] w-[18vw] max-w-[200px] xl:w-[200px] z-10"
+                alt="Bottom Decoration 5"
+                className="hero-bg-image-5"
             />
 
             {/* ---- LEFT COLUMN (MAIN IMAGE) ---- */}
-            <div className="w-full lg:w-2/3 flex justify-center lg:justify-start pt-20 lg:pt-8 z-10">
-                <motion.img
+            <div className="hero-left-column">
+                <img
                     src="/img/main.png"
-                    alt="Heros"
-                    className="w-full max-w-[90%] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[700px] h-auto object-contain"
-                    initial={{ x: -100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, ease: "easeOut" }}
+                    alt="Hero Main Image"
+                    className="hero-main-image"
                 />
             </div>
 
             {/* ---- RIGHT COLUMN (TEXT CONTENT) ---- */}
-            <motion.div
-                className="w-full lg:w-1/2 flex justify-center lg:justify-start z-10 p-4 lg:p-16"
-                initial={{ x: 50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
-            >
-                <div className="flex flex-col items-center lg:flex-row lg:items-stretch gap-4 max-w-[500px] text-center lg:text-right">
+            <div className="hero-right-column">
+                <div className="hero-text-container">
                     {/* Text block */}
-                    <div>
-                        <h1 className="text-[31px] font-normal leading-[36px]">
+                    <div className="hero-text-block">
+                        <h1 className="hero-heading">
                             SECURE SOLUTIONS FOR
                         </h1>
-                        <h1 className="text-[37.6px] font-bold leading-[42px]">
+                        <h1 className="hero-heading-bold">
                             TOMORROW'S
                         </h1>
-                        <h1 className="text-[37.6px] font-bold leading-[42px]">
+                        <h1 className="hero-heading-bold">
                             CHALLENGES
                         </h1>
                     </div>
 
                     {/* "IT" box */}
-                    <div className="flex items-center justify-center bg-[#8a9fc4] px-4 py-1 mt-2 sm:mt-0">
-                        <h1 className="text-[37.6px] font-bold text-black">
-                            IT
-                        </h1>
+                    <div className="hero-it-box">
+                        <h1 className="hero-it-text">IT</h1>
                     </div>
-
                 </div>
-            </motion.div>
+            </div>
         </section>
     );
 }

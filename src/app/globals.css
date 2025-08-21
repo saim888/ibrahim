@@ -249,36 +249,283 @@ html {
 /*    }*/
 /*}*/
 
-.hero-main-img {
-    width: auto;
-    height: 75vh;
-    max-width: 100%;
+/*.hero-main-img {*/
+/*    width: auto;*/
+/*    height: 75vh;*/
+/*    max-width: 100%;*/
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+/*    .hero-main-img {*/
+/*        height: 75vh;*/
+/*        width: auto;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1199px) {*/
+/*    .hero-main-img {*/
+/*        height: auto;*/
+/*        max-height: 50vh;*/
+/*    }*/
+
+/*    img[alt="Decoration"] {*/
+/*        max-width: 40vw;*/
+/*        height: auto;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+/*    .top-6 {*/
+/*        top: 4vh !important;*/
+/*    }*/
+
+/*    .left-6 {*/
+/*        left: 10vh !important;*/
+/*    }*/
+/*}*/
+
+
+/* === HERO SECTION STYLES START === */
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Mobile first: stacked layout */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #05233c;
+    overflow: hidden; /* Elements ko bahar jane se rokein */
 }
 
-@media (min-width: 1200px) {
-    .hero-main-img {
-        height: 75vh;
-        width: auto;
+/* ---- LOGO ---- */
+.hero-logo {
+    position: absolute;
+    top: 1rem;      /* 16px */
+    left: 1rem;     /* 16px */
+    width: 8rem;    /* 128px */
+    z-index: 30;
+}
+
+/* ---- BACKGROUND DECORATION IMAGES ---- */
+.hero-bg-image-1 {
+    position: absolute;
+    left: -197px;
+    top: 20%;
+    transform: translateY(-50%);
+    display: none; /* Choti screen par hide karein */
+}
+
+.hero-bg-image-2 {
+    position: absolute;
+    top: -15vh;
+    right: 1vw;
+    width: 45vw;
+    max-width: 250px;
+}
+
+.hero-bg-image-center {
+    position: absolute;
+    top: -30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55vw;
+    max-width: 300px;
+}
+
+.hero-bottom-right-container {
+    position: absolute;
+    width: 18rem; /* 288px */
+    height: 22rem; /* 352px */
+    right: -150px;
+    bottom: -120px;
+    z-index: 25;
+}
+
+.hero-bg-image-4 {
+    position: absolute;
+    bottom: 0;
+    right: -5vw;
+    width: 25vw;
+    max-width: 150px;
+    z-index: 20;
+}
+
+.hero-bg-image-5 {
+    position: absolute;
+    bottom: 16vh;
+    right: 3vw;
+    width: 22vw;
+    max-width: 130px;
+    z-index: 10;
+}
+
+
+/* ---- COLUMNS ---- */
+.hero-left-column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; /* 80px */
+    z-index: 10;
+}
+
+.hero-main-image {
+    width: 90%;
+    max-width: 400px; /* Mobile par max width */
+    height: auto;
+    object-fit: contain;
+}
+
+.hero-right-column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem; /* 16px */
+    z-index: 10;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column; /* Mobile par text aur IT box upar neeche */
+    align-items: center;
+    gap: 1rem; /* 16px */
+    max-width: 500px;
+    text-align: center;
+}
+
+.hero-text-block {
+    /* Ismein koi specific style ki zaroorat nahi */
+}
+
+.hero-heading {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.hero-heading-bold {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.hero-it-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8a9fc4;
+    padding: 0.25rem 1rem; /* 4px 16px */
+    margin-top: 0.5rem;
+}
+
+.hero-it-text {
+    font-size: 34px;
+    font-weight: 700;
+    color: black;
+}
+
+
+/* === Media Queries for Responsiveness === */
+
+/* Tablets and small desktops (e.g., screen width > 768px) */
+@media (min-width: 768px) {
+    .hero-main-image {
+        max-width: 500px;
+    }
+
+    .hero-heading {
+        font-size: 31px;
+    }
+
+    .hero-heading-bold, .hero-it-text {
+        font-size: 37.6px;
     }
 }
 
-@media (max-width: 1199px) {
-    .hero-main-img {
-        height: auto;
-        max-height: 50vh;
+
+/* Large desktops (e.g., screen width > 1024px) */
+@media (min-width: 1024px) {
+    .hero-section {
+        flex-direction: row; /* Layout side-by-side ho jaye */
+        justify-content: space-between;
     }
 
-    img[alt="Decoration"] {
-        max-width: 40vw;
-        height: auto;
-    }
-}
-@media (min-width: 1200px) {
-    .top-6 {
-        top: 4vh !important;
+    .hero-logo {
+        top: 2.3rem;
+        left: 7rem;
+        width: 15rem; /* Logo size adjust karein */
     }
 
-    .left-6 {
-        left: 10vh !important;
+    .hero-bg-image-1 {
+        display: block; /* Large screen par show karein */
+    }
+
+    .hero-bg-image-2 {
+        top: -25vh;
+        width: 35vw;
+        max-width: 410px;
+    }
+
+    .hero-bg-image-center {
+        top: -48vh;
+        width: 45vw;
+        max-width: 500px;
+    }
+
+    .hero-bottom-right-container {
+        width: 27rem;
+        height: 32rem;
+        right: -260px;
+        bottom: -199px;
+    }
+
+    .hero-bg-image-4 {
+        width: 18vw;
+        max-width: 220px;
+    }
+
+    .hero-bg-image-5 {
+        width: 18vw;
+        max-width: 200px;
+    }
+
+    .hero-left-column {
+        width: 60%;
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+
+    .hero-main-image {
+        max-width: 600px;
+    }
+
+    .hero-right-column {
+        width: 40%;
+        justify-content: flex-start;
+        padding: 2rem;
+    }
+
+    .hero-text-container {
+        flex-direction: row; /* Text aur IT box side-by-side */
+        align-items: stretch;
+        text-align: right;
+    }
+
+    .hero-it-box {
+        margin-top: 0;
     }
 }
+
+/* Extra large desktops (e.g., screen width > 1280px) */
+@media (min-width: 1280px) {
+    .hero-logo {
+        width: 28rem; /* Thoda aur bada logo */
+    }
+
+    .hero-main-image {
+        max-width: 700px;
+    }
+}
+
+/* === HERO SECTION STYLES END === */
